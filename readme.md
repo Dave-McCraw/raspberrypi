@@ -40,7 +40,13 @@ architecture and submit the deb to the package maintainer (dave@mccraw.co.uk) to
     sudo apt-get update
     sudo apt-get install emoncms-module-rfm12pi
 
-Configuration is done via the emoncms web interface. The `php5-dio`
+Configuration is done via the emoncms web interface. 
+
+Note that the debian packaging itself is maintained as part of a separate repo: 
+[pkg-emoncms-module-rfm12pi](git@github.com:Dave-McCraw/pkg-emoncms-module-rfm12pi.git)
+which tracks *tagged revisions* of the main [raspberrypi](https://github.com/emoncms/raspberrypi)
+module only. Any commits which are not tagged as a formal revision of emoncms will not
+be available through apt.  
 
 ### Manual Linux installation
 
