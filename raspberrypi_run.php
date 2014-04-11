@@ -22,6 +22,8 @@
 
   // 1) Load settings and core scripts
   require "process_settings.php";
+  require "Modules/log/EmonLogger.php";
+  
   // 2) Database
   $mysqli = new mysqli($server,$username,$password,$database);
 
